@@ -1,0 +1,292 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Detail</title>
+      <link rel="stylesheet" href="styles\detail.css" />
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+      <div id="main-container">
+        <!-- Header -->
+        <header>
+          <!-- header start -->
+          <div class="headerNavBar">
+            <div class="headerNavbar-logo">
+              <img
+                id="MainLogo"
+                class="IndexLogo"
+                src="assests\images\logo.png"
+                alt="logo"
+              />
+            </div>
+            <!-- LogIn Button -->
+            <nav id="logIn">
+              <ul id="logIn" style="list-style: none">
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-toggle="modal"
+                    data-target="#modalLogin"
+                  >
+                    Login
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <!-- Button trigger modal -->
+  
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modalLogin"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Please Login
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-modal">
+                      <form action="">
+                        <label for="">Username: </label>
+                        <input type="text" placeholder="Enter Username" />
+                        <br />
+                        <br />
+                        <label for="">Password: </label>
+                        <input type="password" placeholder="Enter Password" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <hr />
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Contact Modal -->
+            <div
+              class="modal fade"
+              id="modalContact"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog contact-modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Get in Touch
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="Contat-form-modal">
+                      <p>Thank you for reaching out</p>
+                      <p>Please enter your email and we will get back to you</p>
+  
+                      <form action="">
+                        <label for="">Username: </label>
+                        <input type="text"  required placeholder="Enter Username" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <hr />
+                    <button type="button" class="btn btn-primary">Submit  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <br /><br />
+
+        <section> 
+          <!-- Content div start -->
+          <div id="container">
+            <div class="flexbox">
+              <div class="w-70">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="400px" width="100%" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" height="400px" width="100%" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" height="400px" width="100%" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                  <!-- <img
+                    id="hotelImg"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                    alt="Raddison Blu Hotel"/>  -->
+              </div>
+              <div class= "w-30">
+                <!-- Form for booking -->
+              <div class="form-container">
+                <form action="">
+                  <label for="">Adults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="number" min="1">
+                  <br>
+
+                  <label for="">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" min="1">
+                  <br>
+
+                  <label for="">From Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="date" min="1">
+                  <br>
+
+                  <label for="">To Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="date" min="1">
+                  <br>
+
+                  <label for="">Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input type="text" min="1">
+                  <br>
+
+                  <a href="payment.html"
+                    ><input type="submit" class="btn btn-outline-success" value="Book Now"
+                  /></a>
+
+                </form>
+              </div>
+            </div>
+            </div>
+            <!--Raddison Blu Hotel Details Start-->
+            </div>
+            <section>
+              <!-- Hotel details -->
+              <div class="HotelDetails">
+                <h2>Raddison Blu Hotel</h2>
+                <p>Rating</p>
+                <p>
+                  <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                </p>
+                <p>An Unordered HTML List</p>
+                <ul>
+                  <li>Room Service</li>
+                  <li>Restaurant</li>
+                  <li>Business centre</li>
+                  <li>Fitness centre</li>
+                  <li>Pool</li>
+                </ul>
+                <h5>Description</h5>
+                <p>
+                  Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas.
+                </p>
+                <!--Raddison Blu Hotel Details ends-->
+              </div>
+            </section>
+          </div>
+          <!-- Content div end -->
+        </section>
+
+        <!-- footer Start  -->
+        <footer id="footer">
+          <nav id="footerNav" class="pt-3">
+            <ul id="contactUs">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#modalContact"
+              >
+                Contact Us
+              </button>
+            </ul>
+            <!-- Button trigger modal -->
+  
+          
+            <!-- FIX COPYRIGHT -->
+            <ul id="copyright">
+              <a>&copy; 2020 ROOM SEARCH PVT LTD</a>
+            </ul>
+  
+            <ul id="contactSocialMedia" class="mr-5">
+              <a href="https://twitter.com" target="_blank">
+                <img
+                height="20px"
+                  class=""
+                  alt="twitter"
+                  src="assests/images/twitter.png"
+                />
+              </a>
+  
+              <a href="https://www.instagram.com" target="_blank">
+                <img
+                height="20px"
+                  class=""
+                  alt="instagram"
+                  src="assests/images/instagram.png"
+                />
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <img
+                height="20px"
+                  class=""
+                  alt="Facebook"
+                  src="assests/images/facebook.png"
+                />
+              </a>
+            </ul>
+          </nav>
+        </footer>
+        <!-- Footer end -->
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").focus();
+      });
+    </script>
+    </body>
+  </html>

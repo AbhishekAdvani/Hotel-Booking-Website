@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles\payment.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <!-- header start -->
+        <div class="headerNavBar">
+          <div class="headerNavbar-logo">
+            <img
+              id="MainLogo"
+              class="IndexLogo"
+              src="assests\images\logo.png"
+              alt="logo"
+            />
+          </div>
+          <!-- LogIn Button -->
+          <nav id="logIn">
+            <ul id="logIn" style="list-style: none">
+              <li><a href="login.html" class="LoginButton">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header><br><br>
+
+      <section>
+        <!-- Content div start -->
+        <div id="content">
+          <!--Raddison Blu Hotel Details Start-->
+          <div id="hotel">
+            <div class="HotelImgTitle">
+            <a href="detail.html">
+              <img
+                id="cityImg"
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                alt="Raddison Blu Hotel"
+              /> </a>
+           
+            </div>
+             <!-- Hotel title and address div -->
+             <div class="hotel-title">
+              <h2>Raddison Blu Hotel</h2>
+              <p>#38 of 1,289 hotels in New Delhi</p>
+              <p>National highway 8,New Delhi 110017 India</p>
+          </div>
+        </div>
+        <!-- flexbox -->
+
+        <div class="flex-box-container">
+            <!-- customer details div -->
+            <div id="customer-details">
+              <p><b>Name:</b> John Doe</p>
+              <p><b>Number of Adults:</b> 2</p>
+              <p><b>check in Date:</b> 06/06/2020</p>
+              <p><b>check-out date:</b> 08/06/2020</p>
+            </div>
+            <!-- payment details -->
+            <div id="payment-details">
+              <p><b>Tariff Breakdown:</b> Rs.1000 * 2 Adults * 5 nights</p>
+              <p><b>Total Amount:</b> Rs.10000</p>
+            </div>
+            <div id="paynow">
+              <button href="payment.html" class="btn btn-success" disabled>Pay now</button>
+            </div>
+            <!--Raddison Blu Hotel Details ends-->
+          </div>
+        </div>
+          <br><br><br><br>
+        
+        <!-- Content div end -->
+      </section>
+
+      <br><br><br><br>
+      <footer id="footer">
+        <nav id="footerNav">
+          <ul id="contactUs">
+            <li class="contactUsli"><a href="contact.html">Contact us</a></li>
+          </ul>
+          <ul id="contactSocialMedia">
+            <a href="https://twitter.com" target="_blank">
+              <img
+                class="SocialMediaIcons"
+                alt="twitter"
+                src="assests/images/twitter.png"
+              />
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                class="SocialMediaIcons"
+                alt="instagram"
+                src="assests/images/instagram.png"
+              />
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                class="SocialMediaIcons"
+                alt="Facebook"
+                src="assests/images/facebook.png"
+              />
+            </a>
+          </ul>
+          <!-- FIX COPYRIGHT -->
+          <ul id="copyright">
+            <a>&copy; 2020 ROOM SEARCH PVT LTD</a>
+          </ul>
+        </nav>
+      </footer>
+      <!-- Footer end -->
+    </div>
+  </body>
+</html>
